@@ -1,0 +1,580 @@
+@font-face {
+    font-family: 'Squada One';
+    src: url('fonts/SquadaOne-Thin.ttf') format('truetype');
+}
+
+body{
+    background: linear-gradient(#fff,#c4c4c4,#496c65);
+}
+
+
+.sec_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
+    background: #222222;
+}
+.logo{
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+.logo h1{
+    font-family: 'Squada One';
+    font-size: 2.5rem;
+}
+.punch_line{
+    font-family: 'Playfair Display';
+    margin-top: -10px;
+}
+.login_button{
+    margin-right: 100px;
+}
+.login_button button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    background: #ff4c06;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 400px;
+    height: 60px;
+    font-family: 'Poppins';
+    transition: ease 0.6s ;
+}
+
+.login_button button:hover{
+    background: #000000;
+    cursor: pointer;
+    box-shadow: 0 0 10px 3px #dd4504c2, /* Inner glow */
+                        0 0 20px 6px #d941007f, /* Outer glow */
+                        0 0 30px 10px #b637001d; /* Extended glow */
+}
+
+.sec_2_heading{
+    font-family: "Yanone Kaffeesatz", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    animation: heading_anim 6s ease infinite;
+    font-size: 5rem;
+    color: #9316e1;
+    text-align: center;
+    font-style: normal;
+}
+
+@keyframes heading_anim{
+    0%{
+        color: #9316e1;
+        text-shadow: 2px 2px 6px  #b8009c;
+    }
+    50%{
+        color: #00064a;
+        text-shadow: 2px 2px 6px  #000000;
+    }
+    100%{
+        color: #9316e1;
+        text-shadow: 2px 2px 6px  #b8009c;
+    }
+}
+.sec_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@keyframes sec_2_body_anim{
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: #c8ff48;
+    }
+    100%{
+        color: #fff;
+    }
+}
+.q1{
+    padding:20px 30px 20px 30px;
+    font-size: 1.6rem;
+    animation: sec_2_body_anim 3s ease infinite;
+    background: #ff5f0e;
+    box-shadow: 8px 8px 0 #9c9c9c;
+    color: #fff;
+    font-family: 'Poppins';
+    border-radius: 0 15px 15px 0;
+}
+.q2{
+    padding:20px 30px 20px 30px;
+    font-size: 1.6rem;
+    background: #ff5f0e;
+    box-shadow: -8px 8px 0 #9c9c9c;
+    color: #ffe079;
+    animation: sec_2_body_anim 6s ease infinite;
+    margin-top: 60px;
+    border-radius: 15px 0 0 15px;
+    font-family: 'Poppins';
+}
+
+.sec_3{
+    text-align: center;
+}
+
+.sec_3_heading{
+    
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+    height: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background:linear-gradient(to right,#e8510000,#e8510000,#000449, #000000,#000449,#e8510000,#ffffff00) ;
+}
+
+@keyframes sec_3_heading_anim{
+    0%{
+        color: #ff7116;
+    }
+    50%{
+        color: #f30c00;
+    }
+    100%{
+        color: #ff7116;
+    }
+}
+
+.sec_3_heading h1{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.star_1{
+    opacity: 60%;
+    rotate: 350deg;
+}
+
+.star_4{
+    opacity: 60%;
+    rotate: 10deg;
+}
+
+.body_sec_3 h2{
+    animation: sec_3_heading_anim 3s ease infinite;
+    margin-top: 50px;
+    color: #ff7116;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body_sec_3 .cardview{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.body_sec_3 .cardview .card1{
+    width: 250px;
+    margin-left:15px ;
+    margin-right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 40px 40px 40px;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(#bd1000,#009e05,#000e7b);
+    background-size: 800% 800%; /* To make the animation smoother */
+    animation: gradientBackground 6s ease infinite; /* Infinite loop for smooth transition */
+}
+
+.body_sec_3 .cardview .card1 h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.body_sec_3 .cardview .card2{
+    width: 250px;
+    margin-left:15px ;
+    margin-right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 40px 40px 40px;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(#5f9b00,#02585e,#e12b02);
+    background-size: 800% 800%; /* To make the animation smoother */
+    animation: gradientBackground 6s ease infinite; /* Infinite loop for smooth transition */
+}
+
+.body_sec_3 .cardview .card2 h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body_sec_3 .cardview .card3{
+    width: 250px;
+    margin-left:15px ;
+    margin-right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 40px 40px 40px;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(#00478f,#005a00,#c400a0);
+    background-size: 800% 800%; /* To make the animation smoother */
+    animation: gradientBackground 6s ease infinite; /* Infinite loop for smooth transition */
+}
+
+.body_sec_3 .cardview .card3 h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body_sec_3 .cardview .card4{
+    width: 250px;
+    margin-left:15px ;
+    margin-right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 40px 40px 40px;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(#a8007b,#9a0310,#005a00);
+    background-size: 800% 800%; /* To make the animation smoother */
+    animation: gradientBackground 6s ease infinite; /* Infinite loop for smooth transition */
+}
+
+.body_sec_3 .cardview .card4 h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body_sec_3 .cardview .card5{
+    width: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:15px ;
+    margin-right: 15px;
+    padding: 0 40px 40px 40px;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(#110066,#090025,#8f04b9);
+    background-size: 800% 800%; /* To make the animation smoother */
+    animation: gradientBackground 6s ease infinite; /* Infinite loop for smooth transition */
+}
+
+.body_sec_3 .cardview .card5 h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@keyframes gradientBackground {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+.sec_4{
+    text-align: center;
+}
+.sec_4 .heading h1{
+    color: #3d3835;
+    font-size: 50px;
+    font-family: 'Bebas Neue';
+}
+.sec_4 .course_banner_layout{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 60px;
+}
+.sec_4 .course_banner_layout .image_side{
+    text-align: left;
+    margin-left: 50px;
+}
+
+.sec_4 .course_banner_layout .image_side img{
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 #6e6e6e48;
+}
+
+
+.sec_4 .course_banner_layout .details_side{
+    text-align: left;
+    margin-left: 100px;
+    color: #fff;
+    background: linear-gradient(#040032,#82009d);
+    padding-left: 50px;
+    box-shadow: 10px 10px 0px #6e6e6ec2;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    margin-right: 50px;
+}
+.sec_4 .course_banner_layout .details_side .body{
+    font-family: 'Poppins';
+}
+
+.sec_4 .course_banner_layout .details_side .bullet_points{
+    font-family: 'Poppins';
+    animation: colorchange 5s ease infinite;
+}
+
+@keyframes colorchange {
+    0%{
+        color: #fff;
+    }
+    25%{
+        color: #ffcc00;
+    }
+    50%{
+        color: #00ff08;
+    }
+    75%{
+        color: #42e6ff;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+.sec_4 .course_banner_layout .details_heading{
+    font-size: 25px;
+    color: #fff;
+}
+
+.sec_4 .course_banner_layout .details_side button{
+    color: #fff;
+    background: #ff5310;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 3px 3px 0 #4d4d4d;
+    padding: 15px 25px 15px 25px; 
+    transition: ease 0.5s;   
+}
+
+.sec_4 .course_banner_layout .details_side button:hover{
+    background: #000000;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #fff;
+}
+
+.sec_4 .course_banner_layout .image_side h2{
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: #ff4c06;
+}
+
+
+.sec_4 .course_banner_layout .image_side .price{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    color: #4b4b4b;
+    font-size: 30px;
+}
+
+.sec_4 .course_banner_layout .image_side button{
+    color: #fff;
+    background:#040032 ;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    transition: ease 0.5s;
+}
+
+
+.sec_4 .course_banner_layout .image_side button:hover{
+    box-shadow: 0px 0px 10px #000000;
+    background: #000;
+    cursor: pointer;
+}
+
+.sec_4 .course_banner_layout .image_side .payment_icons{
+    margin-top: 20px;
+}
+
+.sec_4 .course_banner_layout .image_side .payment_icons img{
+    box-shadow: none;
+}
+
+.sec_4 .sec_4_button{
+    padding: 20px 80px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #6e6e6e,#353535);
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+    color: #fff;
+    box-shadow: 10px 10px 0 #040032;
+    transition: ease 0.6s;
+}
+
+
+.sec_4 .sec_4_button:hover{
+    cursor: pointer;
+    background: #000;
+    box-shadow: 10px 10px 4px #4d4d4d;
+}
+
+.sec_5{
+    padding: 40px 100px;
+    background: linear-gradient(#000330,#420789,#6e0681,#000330);
+    color: #fff;
+    background-size: 800% 800%;
+    animation: fluidic_anim 9s ease infinite;
+}
+
+@keyframes fluidic_anim{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+
+.sec_5 h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Teko';
+    font-weight: 400;
+}
+.sec_5 .container{
+    text-align: left;
+    background: #00000074;
+    border-radius: 30px;
+    padding: 30px;
+}
+.sec_5 .container h1{
+    text-align: left;
+    font-size: 70px;
+    line-height: 80px;
+    animation: anim_h1 3s ease infinite;
+}
+
+.sec_5 .container h3{
+    font-family: 'Poppins';
+    font-size: 30px;
+    animation: anim_h3 14s ease infinite;
+}
+
+@keyframes anim_h1{
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: #51ff65;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+
+@keyframes anim_h3{
+    0%{
+        color: #ffa806;
+    }
+    12%{
+        color: #18ffa3;
+    }
+    25%{
+        color: #f980ff;
+    }
+    50%{
+        color: #9807a8;
+    }
+    62%{
+        color: #7eff46;
+    }
+    75%{
+        color: hsl(11, 100%, 64%);
+    }
+    100%{
+        color: #ffa806;
+    }
+}
+
+.sec_5 .container button{
+    padding: 20px 60px;
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 20px;
+    background: #a8006a;
+    border: none;
+    border-radius: 10px;
+    transition: ease 0.6s;
+}
+
+.sec_5 .container button:hover{
+    box-shadow: 0px 0px 20px #ffffff6d;
+    background: #000;
+    cursor: pointer;
+}
+
+.sec_6{
+    background: #141414 ;
+    display: flex;
+    margin-top: -30px;
+    border-radius: 20px 20px 0 0;
+    justify-content: space-between;
+}
+
+.sec_6 img{
+    border-radius: 100px;
+    margin-top: 100px;
+}
+.sec_6 .image_1{
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.sec_6 .image_2{
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.sec_6 .image_3{
+    margin-bottom: 50px;
+    margin-left: -20px;
+}
+.sec_6 .text{
+    
+    align-items: center;
+    text-align: right;
+    color: #fff;
+    margin-top: 40px;
+    padding: 20px;
+}
+.sec_6 .text .heading{
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: #ffa070;
+}
+
+
+.sec_6 .text .t1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sec_6 .text h2{
+    font-family: 'Poppins';
+}
+.sec_6 .text h3{
+    font-family: 'Poppins';
+}
